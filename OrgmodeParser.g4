@@ -4,7 +4,7 @@ options {
 	tokenVocab = OrgmodeLexer;
 }
 
-file: line* EOF;
+file: EOF | line* EOF;
 line: todo | header;
 header: HEADER;
 todo: TODO;
