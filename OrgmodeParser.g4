@@ -5,6 +5,4 @@ options {
 }
 
 file: EOF | line* EOF;
-line: todo | header;
-header: HEADER;
-todo: TODO;
+line: HEADER | TEXT NEWLINE?;
